@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+
+  ~ MyListKing ~
+  Author: Gavin Honeycutt
+  Date: 4/6/2020
+
+ -->
+
+<!--##############################################
+#1 This is my List King. You should make it yours, 
+Change the page title to your name, 
+add in authorship comments too. BC 
+
+
+TS: Done.
+###############################################-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gavin Honeycutt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--##############################################
+#2 Help! Why did my stylesheet stop loading! BC 
+
+
+GH: Your styleheet path way was named incorrectly.
+Changed styles to style
+###############################################-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!--##############################################
+#3 Plz give a double-check on all my tags. Is my 
+HTML page valid. All tags closed? Parentheses, quotations, 
+etc. (Hint: 2 errors to fix here) -BC
+
+
+GH:
+1) There was a missing ending quotations on line 63
+
+
+###############################################-->
+
+<body>
+
+    <div id="page">
+        <h1 id="header">List</h1>
+        <h2>Buy groceries <span id="counter"></span></h2>
+        <ul>
+            <li id="one" class="hot"><em>fresh</em> figs</li>
+            <li id="two" class="hot">pine nuts</li>
+            <li id="three" class="hot">honey</li>
+            <li id="four">balsamic vinegar</li>
+        </ul>
+        <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+        <form id="newItemForm">
+            <input type="text" id="itemDescription" placeholder="Add description" />
+            <input type="submit" id="add" value="add" />
+        </form>
+    </div>
+
+    <script src='libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <!--##############################################
+#4 I think I'm having trouble debugging my script
+because this HTML file doesn't color code anything 
+for me to help me figure out my errors! How can I
+fix this. (Also this HTML code is so long, I'd  love to 
+make it simpler by moving this code somewhere else!) -BC
+																				 
+(hey, after this, the next one, #5 is in my stylesheet)
+
+
+GH: Moved all the javascript into a js file and ported it in.
+###############################################-->
+
+    <script src="scripts/code.js"></script>
+
+</body>
+
+</html>
